@@ -1,0 +1,23 @@
+.main_title {
+  .main_big_title {
+    font-family: Lora;
+    font-size: 72px;
+    line-height: 92px;
+    text-transform: capitalize;
+  }
+  .main_big_teg {
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fe982a;
+    &::before {
+      content: "";
+      position: relative;
+      top: 0px;
+      width: 130px;
+      height: 10px;
+      border-top: 1px solid orange;
+    }
+  }
+}
