@@ -4,7 +4,6 @@ import { Route } from "react-router-dom";
 export const Header = (props) => {
   return (
     <div className={s.header}>
-      {/* ======== */}
       <div className={s.nav}>
         <ul>
           <li>
