@@ -4,6 +4,7 @@
     font-size: 72px;
     line-height: 92px;
     text-transform: capitalize;
+    color: #fff;
   }
   .main_big_teg {
     font-family: "Montserrat";
@@ -14,9 +15,10 @@
     &::before {
       content: "";
       position: relative;
-      top: 0px;
-      width: 130px;
-      height: 10px;
+      top: 10px;
+      left: -5px;
+      padding: 0px 0px 0px 84px;
+      margin: 0px 0px 0px 8px;
       border-top: 1px solid orange;
     }
   }
