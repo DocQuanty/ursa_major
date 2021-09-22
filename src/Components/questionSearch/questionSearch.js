@@ -23,9 +23,7 @@ const QuestionSearch = () => {
           </div>
         </div>
         <div className={s.search_wrapper}>
-          <div className={s.search}>
-            <img src="../../images/svg/search.svg" alt="123" />
-          </div>
+          <div className={s.search}></div>
         </div>
       </div>
     </div>
