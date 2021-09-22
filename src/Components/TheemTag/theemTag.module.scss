@@ -1,0 +1,16 @@
+.main_big_teg {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fe982a;
+  &::before {
+    content: "";
+    position: relative;
+    top: 10px;
+    left: -5px;
+    padding: 0px 0px 0px 84px;
+    margin: 0px 0px 0px 8px;
+    border-top: 1px solid orange;
+  }
+}
