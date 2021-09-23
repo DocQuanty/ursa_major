@@ -1,36 +1,71 @@
-.header {
-  color: red;
-  font-family: "Montserrat";
-  display: flex;
-  justify-content: space-between;
-  font-weight: 300;
-  vertical-align: middle;
+.sideText {
+  // background-color: grey;
 
-  .nav {
-    font-size: 16px;
-    line-height: 20px;
-    a {
-      //   color: #ffffff;
-      color: #000;
-      text-decoration: none;
-    }
+  &_tag {
+    margin: 0px 0px 12px 0px;
   }
-  .tel_number {
-    color: orange;
-    font-weight: 600;
-    white-space: nowrap;
+  &_titleWhite {
+    margin: 0px 0px 33px 0px;
+    margin: 0px 0px 34px 0px;
+    font-family: Lora;
+    font-size: 48px;
+    line-height: 61px;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  &_titleBlack {
+    margin: 0px 0px 37px 0px;
+    font-family: Lora;
+    font-size: 48px;
+    line-height: 61px;
+    text-transform: capitalize;
+    color: #000;
+  }
+  &_content {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0px 0px 40px 0px;
     p {
       margin: 0;
+      padding: 0;
+      margin: 0px 0px 20px 0px;
+    }
+    ul {
+      padding-left: 0px;
+      list-style-type: none;
+      margin: 0;
+
+      li {
+        position: relative;
+        margin: 0px 0px 0px 10px;
+        &::before {
+          height: 4px;
+          width: 4px;
+          content: "";
+          position: absolute;
+          left: -8px;
+          top: 10px;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+      }
     }
   }
-  ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  li {
-    margin: 0px 48px 0px 0px;
-    list-style-type: none;
+  &_link {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    a {
+      text-decoration: none;
+      color: #fe982a;
+      margin: 0px 87px 0px 0px;
+      &::after {
+        content: "--->";
+        margin-left: 15px;
+      }
+    }
   }
 }
