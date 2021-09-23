@@ -9,7 +9,7 @@
       color: #fe982a;
       margin: 0px 87px 0px 0px;
       &::after {
-        content: "--->";
+        content: url("../../../images/svg/Arrow.svg");
         margin-left: 15px;
       }
     }
