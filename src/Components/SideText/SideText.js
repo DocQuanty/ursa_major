@@ -35,7 +35,6 @@ export const SideText = (props) => {
         </div>
         {title()}
         {content()}
-        <div className={s.sideText_link}></div>
       </div>
     </>
   );

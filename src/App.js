@@ -2,11 +2,12 @@
 import "./fonts/fonts.scss";
 import "./App.scss";
 import SideText from "./Components/SideText/SideText";
+import TwoLink from "./Components/SideText/TwoLink/TwoLink";
 
 function App() {
   return (
     <div className="App">
-      <SideText titleName={"Велика ведмедиця"} mode={"modeWhite"}>
+      {/* <SideText titleName={"Велика ведмедиця"} mode={"modeWhite"}>
         <p>
           Отримайте комплексний відпочинок, а не ключі від номеру. <br />
           <span style={{ color: "orange" }}>
@@ -19,7 +20,8 @@ function App() {
           <li>Family готель в Яремче</li>
           <li>Елітні котеджі від Яремча до Буковеля</li>
         </ul>
-      </SideText>
+      </SideText> */}
+      <TwoLink></TwoLink>
     </div>
   );
 }

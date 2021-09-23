@@ -53,19 +53,4 @@
       }
     }
   }
-  &_link {
-    font-family: Montserrat;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    a {
-      text-decoration: none;
-      color: #fe982a;
-      margin: 0px 87px 0px 0px;
-      &::after {
-        content: "--->";
-        margin-left: 15px;
-      }
-    }
-  }
 }
