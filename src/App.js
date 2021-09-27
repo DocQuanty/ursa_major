@@ -3,6 +3,7 @@ import "./fonts/fonts.scss";
 import "./App.scss";
 import SideText from "./Components/SideText/SideText";
 import TwoLink from "./Components/SideText/TwoLink/TwoLink";
+import ThreePictures from "./Components/threePictures/threePictures";
 
 function App() {
   const arr = {
@@ -15,7 +16,8 @@ function App() {
   };
   return (
     <div className="App">
-      <SideText
+      <ThreePictures />
+      {/* <SideText
         marginBottom={20}
         arr={arr}
         titleName={"Велика ведмедиця"}
@@ -34,7 +36,7 @@ function App() {
           <li>Елітні котеджі від Яремча до Буковеля</li>
         </ul>
       </SideText>
-      <TwoLink link={arr.link}></TwoLink>
+      <TwoLink link={arr.link}></TwoLink> */}
     </div>
   );
 }
