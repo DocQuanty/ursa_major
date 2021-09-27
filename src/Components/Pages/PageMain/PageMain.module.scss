@@ -1,2 +1,15 @@
 .PageMain {
+  background-image: url("../../../images/image/backGround.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
+  &_wrapper {
+    padding: 0 165px 0 165px;
+  }
+  &__header {
+    padding: 25px 0px 0px 0px;
+    margin: 0px 0px 409px 0px;
+  }
 }
