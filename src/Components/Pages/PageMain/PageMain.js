@@ -1,6 +1,6 @@
 import s from "./PageMain.module.scss";
 import SlideText from "../../SideText/SideText";
-// import TheemTag from "../TheemTag/TheemTag";
+import TheemTag from "../../TheemTag/TheemTag";
 import TwoLink from "../../SideText/TwoLink/TwoLinks";
 import { Header } from "../../header/header";
 
@@ -12,7 +12,9 @@ const PageMain = (props) => {
           <Header />
         </div>
         <div className={s.PageMain__SlideText}>
-          {/* <TheemTag /> */}
+          <TheemTag
+            nameTag={"Мережа готелів та котеджів в Буковелі та Яремче"}
+          />
           <SlideText
             titleMain={"Велика ведмедиця"}
             marginBottom={20}
