@@ -1,10 +1,9 @@
 import s from "../SideText/sideText.module.scss";
 import TheemTag from "../TheemTag/TheemTag";
 
-// const theemTag = [{ nameTag: "awdawdawdawd213123123" }];
-
 export const SideText = (props) => {
-  // debugger;
+  debugger;
+  // createComponentTitle
 
   const title = () => {
     if (props.mode === "modeWhite") {
@@ -15,8 +14,10 @@ export const SideText = (props) => {
       return null;
     }
   };
+
+  // createComponentContent
+
   const content = () => {
-    // debugger;
     if (props.mode === "modeWhite") {
       return (
         <div
@@ -41,7 +42,7 @@ export const SideText = (props) => {
     <>
       <div className={s.sideText}>
         <div className={s.sideText_tag}>
-          <TheemTag theemTagArr={props.arr.theemTag} />
+          {/* <TheemTag theemTagArr={props.arr.theemTag} /> */}
         </div>
         {title()}
         {content()}

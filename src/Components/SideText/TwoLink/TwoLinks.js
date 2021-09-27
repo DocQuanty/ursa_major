@@ -1,7 +1,7 @@
 import s from "./twoLink.module.scss";
 
-const TwoLink = (props) => {
-  const link = props.link.map((links, index) => (
+const TwoLinks = (props) => {
+  const link = props.links.map((links, index) => (
     <a key={index} href={links.href}>
       {links.text}
     </a>
@@ -14,4 +14,4 @@ const TwoLink = (props) => {
   );
 };
 
-export default TwoLink;
+export default TwoLinks;

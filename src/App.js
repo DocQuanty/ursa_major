@@ -1,42 +1,69 @@
 // import HeaderPage from "./Components/Page/headerPage";
 import "./fonts/fonts.scss";
 import "./App.scss";
-import SideText from "./Components/SideText/SideText";
-import TwoLink from "./Components/SideText/TwoLink/TwoLink";
+import PageMain from "./Components/Pages/PageMain/PageMain";
+import React from "react";
 
-function App() {
-  const arr = {
-    link: [
-      { text: "МЕНЮ", href: "/menu" },
-      { text: "НАПОЇ", href: "/napoi" },
-    ],
-    theemTag: [{ nameTag: "АТМОСФЕРНИЙ ВІДПОЧИНОК В ГОРАХ" }],
-    sideText: [{}],
-  };
-  return (
-    <div className="App">
-      <SideText
-        marginBottom={20}
-        arr={arr}
-        titleName={"Велика ведмедиця"}
-        mode={"modeWhite"}
-      >
-        <p>
-          Отримайте комплексний відпочинок, а не ключі від номеру. <br />
-          <span style={{ color: "orange" }}>
-            У нас європейський сервіс та домашня атмосфера затишку і
-            гостинності.
-          </span>
-        </p>
-        <ul>
-          <li>Готельно-ресторанний комплекс "Ведмежий Двір" у Буковелі</li>
-          <li>Family готель в Яремче</li>
-          <li>Елітні котеджі від Яремча до Буковеля</li>
-        </ul>
-      </SideText>
-      <TwoLink link={arr.link}></TwoLink>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      state: "state",
+      links: [
+        { text: "МЕНЮ", href: "/menu" },
+        { text: "НАПОЇ", href: "/napoi" },
+      ],
+
+      theemTag: [{ nameTag: "АТМОСФЕРНИЙ ВІДПОЧИНОК В ГОРАХ" }],
+
+      sideBlockContent: {
+        allTagColor: [
+          { color: "АТМОСФЕРНИЙ ВІДПОЧИНОК В ГОРАХ" },
+          { color: "АТМОСФЕРНИЙ ВІДПОЧИНОК В ГОРАХ" },
+        ],
+        allTitle: [
+          { title: "Готель в Буковель" },
+          { title: "Готель в Буковель" },
+        ],
+
+        allContent: [
+          {
+            ContentParagraphs: [
+              {
+                p: "Ми відкрили новий ресторан, де вас будуть дивувати поєднанням української та європейської кухонь.",
+              },
+
+              {
+                p: "Бренд-шеф Дмитро Кузнєцов ітерпретує традиційні рецептури на сучасний лад й окрім професійного досвіду додає до кожної страви особливий інгредієнт, – Любов!",
+              },
+            ],
+          },
+          {
+            list: [
+              {
+                title: "До ваших послуг:",
+                li01: "7 видів гуцульських сніданків",
+                li02: "дитяча кімната",
+                li03: "басейн з підігрівом",
+                li04: "гуцульське спа (баня, гарячі діжки)",
+                li05: "сауна",
+                li06: "BBQ-place",
+                li07: "автостоянка",
+              },
+            ],
+          },
+        ],
+      },
+    };
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <PageMain state={this.state} />
+      </div>
+    );
+  }
 }
 
 export default App;
