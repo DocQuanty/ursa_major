@@ -6,7 +6,7 @@ const PageMain = (props) => {
   return (
     <div className={s.PageMain}>
       <SlideText
-        sideBlockContent={props.state.sideBlockContent}
+        titleMain={"Велика ведмедиця"}
         marginBottom={20}
         arr={props.state}
         mode={"modeWhite"}
@@ -24,7 +24,7 @@ const PageMain = (props) => {
           <li>Елітні котеджі від Яремча до Буковеля</li>
         </ul>
       </SlideText>
-      <TwoLink links={props.state.links}></TwoLink>
+      <TwoLink links={props.state.twoLinks}></TwoLink>
     </div>
   );
 };
